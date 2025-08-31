@@ -1,0 +1,83 @@
+body{
+     margin:0;
+    padding:0;
+    display: flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items: center;
+    /* background: linear-gradient(45deg,#08001f,#30197d); */
+      background: linear-gradient(135deg, #1a1a1a, #434343);
+   min-height: 100vh;
+     font-family: Arial, sans-serif;
+    box-sizing: border-box;
+    overflow-y: scroll;
+}
+.alarmsetsection,.multipleAlarm{
+    background-color:white;
+    margin: 10px;
+    padding: 10px;
+      box-shadow: 5px 5px 10px 0 rgba(0, 0, 0, 0.5);
+      border-radius: 10px;
+      text-align: center;
+}
+ .first{
+    background: white;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 5px 5px 10px 0 rgba(0, 0, 0, 0.5);
+    text-align: center;
+  }
+ .bottom{
+  display: flex;
+ } 
+
+  input[type="time"] {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    transition: all 0.3s ease; 
+  }
+input[type="time"]:hover{
+   background-color: #45a049;
+     transform: scale(1.05);  
+}
+
+.alarm,.myButton{
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    margin: 5px;
+    transition: all 0.3s ease;
+}
+
+.alarm:hover,.clearAlarmbtn:hover,.myButton:hover {
+    background-color: #45a049;
+    transform: scale(1.05);
+  }
+ #status {
+    font-size: 18px;
+    color: #333;
+  }
+
+/* multiple alarm */
+.multipleAlarm{
+  display: none;  
+}
+#houralarm,#minutealarm{
+  border-radius: 5px;
+  padding: 5px;
+  margin-bottom: 5px;
+  background-color: #f0f0f0;
+}
+#ampm{
+  padding:2px;
+}
+#hours,#minutes{
+  padding: 5px;
+}

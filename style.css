@@ -1,0 +1,109 @@
+*{
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+   font-family: 'Courier New', Courier, monospace;
+}
+body{
+  background: linear-gradient(135deg, #1a1a1a, #434343);
+     min-height:100vh;
+ overflow-y: scroll;    
+}
+
+header{
+   display: flex;
+  /* background-color:aqua; */
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 50px;
+  color: blanchedalmond;
+}
+.middleHead{
+   display: flex;
+   justify-content:center;
+ 
+}
+#clock,#alarm,#stopwatch,#timer{
+ margin: 10px;
+ padding: 25px;   
+background: white;
+min-height: 150px;
+max-width: 250px;
+border-radius: 10px;
+transition: 0.3s ease;
+}
+#clock:hover,#alarm:hover,#stopwatch:hover,#timer:hover{
+transform: translateY(-10px);
+cursor: pointer;
+}
+.commonclass{
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+}
+.card-icon{
+  font-size: 50px;
+  padding: 10px 0px;
+}
+.heading{
+  padding: 10px 0px;
+   font-weight: 900;
+}
+.btn{
+    margin: 10px 0px;
+    padding: 10px 0px;
+    font-size: larger;
+  width: 110%;
+  border-radius: 15px;
+}
+.btn:hover{
+    cursor: pointer;
+}
+.btnClock{
+    background-color: #306992;
+}
+.btnStopwatch{
+background-color: #d84536;
+}
+.btnAlarm{
+background-color: #2abb68;
+}
+.btnTimer{
+    background-color: #954fb2;
+}
+@media (max-width:300px){
+  /* .container{
+    display: flex;
+    flex-direction: column;
+  } */
+  .middleHead{
+      display: flex;
+    flex-direction: column;
+  }
+}
+
+@media (min-width:301px)and (max-width:600px){
+  /* .container{
+    display: flex;
+    flex-direction: column;
+  } */
+  .middleHead{
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+  }
+}
+
+@media (min-width:600px){
+  /* .container{
+    display: flex;
+    flex-direction: column;
+  } */
+  .middleHead{
+      display: flex;
+      flex-direction:row;
+      flex-wrap: wrap;
+  }
+}

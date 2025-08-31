@@ -1,0 +1,64 @@
+body{
+     margin:0;
+    padding:0;
+    display: flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items: center;
+    /* background: linear-gradient(45deg,#08001f,#30197d); */
+      background: linear-gradient(135deg, #1a1a1a, #434343);
+   min-height: 100vh;
+     font-family: Arial, sans-serif;
+    box-sizing: border-box;
+}
+.stopwatch{
+  min-width:260px;
+  background-color:white;
+  margin: 10px;
+  padding: 10px;
+  box-shadow: 5px 5px 10px 0 rgba(0, 0, 0, 0.5);
+  border-radius: 10px;
+  text-align: center;
+}
+.threebutton {
+    display: flex; 
+    flex-direction: column;
+    align-items: center; 
+  }
+
+.threebutton button {
+   width: 70%;
+   
+    padding: 12px 24px;
+    font-size: 16px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    background-color: #4CAF50;
+    color: white;
+    transition: all 0.3s ease;
+    margin:8px;
+  }
+
+  .threebutton button:hover {
+    background-color: #45a049;
+    transform: scale(1.05);
+  }
+h2{
+    width: 100%;
+     box-shadow: 5px 5px 10px 0 rgba(0, 0, 0, 0.5);
+     border-radius: 5px;
+}
+
+
+
+/* timer  */
+.bottom{
+  display: flex;
+}
+#minutes-input{
+  padding: 5px;
+  margin-bottom: 5px;
+  background-color: #f0f0f0;
+  border-radius: 5px;
+}

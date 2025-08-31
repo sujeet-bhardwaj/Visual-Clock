@@ -1,0 +1,70 @@
+body{
+     margin:0;
+    padding:0;
+    display: flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items: center;
+    /* background: linear-gradient(45deg,#08001f,#30197d); */
+      background: linear-gradient(135deg, #1a1a1a, #434343);
+      height: 100vh;
+     font-family: Arial, sans-serif;
+    box-sizing: border-box;
+ 
+}
+.timer{
+  min-width:290px;
+    background-color:white;
+    margin: 10px;
+    padding: 10px;
+      box-shadow: 5px 5px 10px 0 rgba(0, 0, 0, 0.5);
+      border-radius: 10px;
+      text-align: center;
+}
+.threebutton {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* justify-content: center; */
+  }
+
+.threebutton button {
+    width: 60%;
+    padding: 12px 24px;
+    font-size: 16px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    background-color: #4CAF50;
+    color: white;
+    transition:0.3s ease;
+    margin:10px;
+    
+  }
+
+  .threebutton button:hover {
+    background-color: #45a049;
+    transform: scale(1.05);
+  }
+h2{
+     box-shadow: 5px 5px 10px 0 rgba(0, 0, 0, 0.5);
+     border-radius: 5px;
+}
+
+
+#minutes-input,#seconds-input{
+  padding: 5px;
+  margin-bottom: 5px;
+  background-color: #f0f0f0;
+  border-radius: 5px;
+}
+
+
+#tmin::after{
+  content: 'MINUTES';
+    font-size: 10px;
+}
+#tsec::after{
+  content: 'SECOND';
+    font-size: 10px;
+}
