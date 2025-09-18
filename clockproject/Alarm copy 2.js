@@ -9,7 +9,6 @@ let alarmid = [];
 //  alarm element
 function createAlarmElement(hour, minute, ampmValue, shouldSetTimer = true) {
   multipleAlarm.style.display = "block";
-
   const li = document.createElement("li");
   const delBtn = document.createElement("button");
   delBtn.innerText = "Delete";
@@ -59,17 +58,13 @@ function createAlarmElement(hour, minute, ampmValue, shouldSetTimer = true) {
     if (alarmTime <= now) {
       alarmTime.setDate(alarmTime.getDate() + 1);
     }
-
     let timeToAlarm = alarmTime - now;
-
     let id = setTimeout(() => {
-      alert(`Alarm ringing: ${h}:${m}${ampmValue}`);
-      statusid.innerText = "Alarm finished.";
+       document.getElementById("alarmSound").play();
+      statusid.innerText = "Alarm Started.";
     }, timeToAlarm);
-
     alarmid.push({ id: id, li: li });
   }
-
   statusid.innerText = "Alarm set!";
 }
 

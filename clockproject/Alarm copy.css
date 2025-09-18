@@ -81,3 +81,12 @@ input[type="time"]:hover{
 #hours,#minutes{
   padding: 5px;
 }
+
+@media (max-width:370px){
+  
+.bottom{
+  display: flex;
+  flex-direction: column;
+}
+
+}

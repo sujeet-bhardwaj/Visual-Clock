@@ -9,6 +9,7 @@
 <body>
         <div class="bottom">
        <section class="alarmsetsection">
+        <audio id="alarmSound" src="ringtone.mp3" preload="auto"></audio>
         <h1>Alarm Set</h1>
          <div class="first"> 
           <div class="bottom">
@@ -21,6 +22,7 @@
         <span>Minutes</span>
 </div>
   <select id="ampm">
+     <option value="" disabled selected>Select</option>
   <option id="am">AM</option>
   <option id="pm">PM</option>
 </select>   
@@ -34,9 +36,7 @@
        <!-- multiple alarm  -->
        <section class="multipleAlarm">
          <ol id="list">
-         
          </ol>
-
        </section>
        </div>
        <script src="Alarm copy 2.js"></script>

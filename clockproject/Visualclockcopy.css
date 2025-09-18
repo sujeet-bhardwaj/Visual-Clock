@@ -5,7 +5,6 @@ body{
     flex-direction:column;
     justify-content: center;
     align-items: center;
-    /* background: linear-gradient(45deg,#08001f,#30197d); */
       background: linear-gradient(135deg, #1a1a1a, #434343);
    min-height: 100vh;
      font-family: Arial, sans-serif;
@@ -36,12 +35,10 @@ border-radius: 5px;
 .showtime{
   margin: 5px;
 }
-
 .clock span{
   font-size:40px;
    width: 110px;
 }
-
  #hrs::after{
   content: "HOURS";
  font-size: 10px;
@@ -77,7 +74,7 @@ border-radius: 5px;
   margin-top: 5px;
   margin-left: 5px;
   padding: 10px 20px;        
-  background-color: grey;  
+  background-color:green;  
   color: white;               
   border: none;               
   border-radius: 8px;         
@@ -92,4 +89,12 @@ border-radius: 5px;
 }
 .AM{
   display: none;
+}
+
+@media (max-width:300px){
+.clock span{
+  font-size:20px;
+   width: 50px;
+}
+
 }
