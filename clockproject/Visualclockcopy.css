@@ -14,9 +14,9 @@ body{
     background-color:white;
     margin: 10px;
     padding: 10px;
-      box-shadow: 5px 5px 10px 0 rgba(0, 0, 0, 0.5);
-      border-radius: 10px;
-      text-align: center;
+    box-shadow: 5px 5px 10px 0 rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    text-align: center;
 }
 .showtime{
   height:150px;
@@ -37,7 +37,7 @@ border-radius: 5px;
 }
 .clock span{
   font-size:40px;
-   width: 110px;
+   width:110px;
 }
  #hrs::after{
   content: "HOURS";
@@ -91,10 +91,13 @@ border-radius: 5px;
   display: none;
 }
 
-@media (max-width:300px){
+@media (max-width:370px){
 .clock span{
   font-size:20px;
-   width: 50px;
+   width:50px;
+}
+#sec::after,#min::after,#hrs::after{
+  font-size:8px;
 }
 
 }

@@ -25,11 +25,10 @@ body{
     padding: 20px;
     border-radius: 12px;
     box-shadow: 5px 5px 10px 0 rgba(0, 0, 0, 0.5);
-    text-align: center;
+     display: flex;
+   margin-bottom: 10px;
   }
- .bottom{
-  display: flex;
- } 
+
 
   input[type="time"] {
     padding: 10px;
@@ -84,9 +83,11 @@ input[type="time"]:hover{
 
 @media (max-width:370px){
   
-.bottom{
-  display: flex;
+.first{
   flex-direction: column;
+}
+#minutes{
+  padding-left: 20px;
 }
 
 }
